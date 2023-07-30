@@ -18,6 +18,7 @@ cobblestone is used for diamond
 
 ### Installation/Usage:
 - You can just download one of the pre-made datapacks and add it to your world.
+  (I will add ones in there that seem reasonably achievable to me)
 - If you want to generate your own:
 1. Download the entire repository to your computer and unzip it.
 2. Inside the folder, unzip "files.zip" into a folder called "files" (just rightclick and "Extract All...")
