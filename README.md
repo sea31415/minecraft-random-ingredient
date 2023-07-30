@@ -37,6 +37,9 @@ python main.py auto_seed false
 python main.py 57483902 yes
 ```
 
+### Problems i need to fix before it's usable:
+- Shaped crafting recipes dont seem to work at all, tho i think i already know why
+
 ### Current Problems (should still be playable with these existing):
 - Because of how the recipe book works/seems to work, it unlocks more crafting recipes than I'd want. For example, holding a log is supposed to unlock only my new randomized recipes that use logs, but it also unlocks all the vanilla recipes that normally use logs which now of course dont use logs.
   (Is there a way to disable the auto-population of the recipe book?)
