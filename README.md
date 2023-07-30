@@ -13,7 +13,7 @@ Additionally, ingredients are always swapped for all recipes, so in this example
 1. Download the entire repository to your computer and unzip it.
 2. Inside the folder, unzip "files.zip" into a folder called "files" (just rightclick and "Extract All...")
 3. Run main.py
-4. Follow the onscreen instructions
+4. Follow the on-screen instructions
 
 #### The program supports 2 command-line arguments for automation, both must be present if either one is needed:
 - The first argument is the seed, which can either be a number, or "auto_seed" if you want a randomly generated seed.
