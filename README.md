@@ -7,6 +7,15 @@ For example, sticks may be swapped with nether quartz ore and diamonds may be sw
 Additionally, ingredients are always swapped for all recipes, so in this example all recipes that use diamonds would use nether quartz ore instead.
 (The example is in the "pre-made-datapacks" folder)
 
+There is a cheatsheet included with every datapack that lists how all the ingredients got randomized.
+This may for example include:
+```
+nether_quartz_ore is used for stick
+cobblestone is used for diamond
+```
+
+
+
 ### Installation/Usage:
 - You can just download one of the pre-made datapacks and add it to your world.
 - If you want to generate your own:
