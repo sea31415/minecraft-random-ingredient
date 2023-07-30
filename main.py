@@ -235,6 +235,10 @@ if __name__ == "__main__":
             user_seed = False
         elif sys.argv[1].isnumeric():
             user_seed = int(sys.argv[1])
+        else:
+            user_seed = input("Seed (leave empty for random seed): ")
+            if user_seed == "":
+                user_seed = False
 
     else:
         user_seed = input("Seed (leave empty for random seed): ")
