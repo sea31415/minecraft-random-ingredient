@@ -41,12 +41,21 @@ def read_recipe(file_path):
     cont = cont.replace('\n', '')
 
     # keep spaces in the pattern, because they're needed for crafting_shaped
-    old_pattern = re.search(r'("pattern":\s*\[\s*(".{1,3}",\s*){0,2}".{1,3}"\s*])', cont)
-    if old_pattern:
-        old_pattern = old_pattern.group(1)
+    has_pattern = re.search(r'"pattern":\s*\[\s*(".{1,3}",\s*){0,2}(".{1,3}")\s*]', cont)
+    if has_pattern:
+        old_patterns = re.findall(r'"pattern":\s*\[\s*(".{1,3}",\s*)?(".{1,3}",\s*)?(".{1,3}")\s*]', cont)[0]
+        old_patterns = [x.strip() for x in old_patterns if x != '']
         cont = cont.replace(' ', '')
-        wrong_pattern = re.search(r'("pattern":\[(".{1,3}",){0,2}".{1,3}"])', cont).group(1)
-        cont = cont.replace(wrong_pattern, old_pattern)
+        wrong_patterns = re.findall(r'"pattern":\[(".{1,3}",\s*)?(".{1,3}",\s*)?(".{1,3}")]', cont)[0]
+        wrong_patterns = [x for x in wrong_patterns if x != '']
+
+
+        start = 0
+        for pattern in range(len(old_patterns)):
+            old_pattern = old_patterns[pattern]
+            wrong_pattern = wrong_patterns[pattern]
+            start = cont.index(wrong_pattern, start + 1)
+            cont = cont[:start] + cont[start:].replace(wrong_pattern, old_pattern, 1)
     else:
         cont = cont.replace(' ', '')
 
