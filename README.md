@@ -14,16 +14,16 @@ nether_quartz_ore is used for stick
 cobblestone is used for diamond
 ```
 
-
-
 ### Installation/Usage:
 - You can just download one of the pre-made datapacks and add it to your world.
+  I recommend doing this, since it quite quickly can get very difficult/near impossible.
   (I will add ones in there that seem reasonably achievable to me)
 - If you want to generate your own:
-1. Download the entire repository to your computer and unzip it.
-2. Inside the folder, unzip "files.zip" into a folder called "files" (just rightclick and "Extract All...")
-3. Run main.py
-4. Follow the on-screen instructions
+1. Have python 3.x installed (the easiest way on Windows is to download it through the [Microsoft Store](https://apps.microsoft.com/store/detail/python-311/9NRWMJP3717K?hl=en-us&gl=us))
+2. Download the entire repository to your computer and unzip it.
+3. Inside the folder, unzip "files.zip" into a folder called "files" (just rightclick and "Extract All...")
+4. Run main.py
+5. Follow the on-screen instructions
 
 #### The program supports 2 command-line arguments for automation, both must be present if either one is needed:
 - The first argument is the seed, which can either be a number, or "auto_seed" if you want a randomly generated seed.
@@ -36,9 +36,6 @@ python main.py auto_seed false
 ```
 python main.py 57483902 yes
 ```
-
-### Problems i need to fix before it's usable:
-- Shaped crafting recipes dont seem to work at all, tho i think i already know why
 
 ### Current Problems (should still be playable with these existing):
 - Because of how the recipe book works/seems to work, it unlocks more crafting recipes than I'd want. For example, holding a log is supposed to unlock only my new randomized recipes that use logs, but it also unlocks all the vanilla recipes that normally use logs which now of course dont use logs.
