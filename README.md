@@ -17,7 +17,7 @@ cobblestone is used for diamond
 ### Installation/Usage:
 - You can just download one of the pre-made datapacks and add it to your world.
   I recommend doing this, since it quite quickly can get very difficult/near impossible.
-  (I will add ones in there that seem reasonably achievable to me)
+  (I will add ones in there that seem reasonably achievable to me, they'll be sorted into easy/medium/hard and i'll add more when i find time to find them. Ff you find ones (especially easy ones) please send me the seed and i'll add them to the folder :])
 - If you want to generate your own:
 1. Have python 3.x installed (the easiest way on Windows is to download it through the [Microsoft Store](https://apps.microsoft.com/store/detail/python-311/9NRWMJP3717K?hl=en-us&gl=us))
 2. Download the entire repository to your computer and unzip it.
