@@ -27,7 +27,7 @@ cobblestone is used for diamond
 
 #### The program supports 2 command-line arguments for automation, both must be present if either one is needed:
 - The first argument is the seed, which can either be a number, or "auto_seed" if you want a randomly generated seed.
-- The second argument defines wether or not "show_notification" should be set true for all recipes (true/yes to enable) (currently unsupported)
+- The second argument defines wether or not "show_notification" should be set true for all recipes (true/yes to enable) (currently unsupported!)
 
 So for example:
 ```
@@ -37,11 +37,15 @@ python main.py auto_seed false
 python main.py 57483902 yes
 ```
 
+### Other info:
+- I will eventually make a "beginners tips" info file for this. If you've played randomized loot drops, or better yet randomized crafting, (or watched other people play them a lot) you wont need these.
+- From tests it seems that on average, one of the ingredients gets mapped to itself, i have half-implemented an "all-random-shuffle" which is supposed to get around this, but I think it doesn't work properly so i need to do more tests. (If you know python, feel free to play around with it)
+
 ### Current Problems (should still be playable with these existing):
 - Because of how the recipe book works/seems to work, it unlocks more crafting recipes than I'd want. For example, holding a log is supposed to unlock only my new randomized recipes that use logs, but it also unlocks all the vanilla recipes that normally use logs which now of course dont use logs.
   (Is there a way to disable the auto-population of the recipe book?)
-- Because of how the recipe book works/seems to work, and unlike the original random crafting, this requires a few thousand commands to run constantly (all done through the datapack) to unlock the crafting recipes to make this playable.
-  (This does seem to make a perfomance impact on my computer but I'd be curious to see if it does on lower end hardware.)
+- Because of how the recipe book works/seems to work, (and unlike the original random crafting,) this requires a few thousand commands to run constantly (all done through the datapack) to unlock the crafting recipes to make this playable.
+  (This does not seem to make a perfomance impact on my computer but I'd be curious to see if it does on lower end hardware. On a self-hosted server with 2 players it gets kinda unplayable very quickly so in it's current iteration i would not recommend playing this in multiplayer, it is compatible though if you want to try)
 - Some recipes do not have the "show_notification" set to true, which might be necessary for it to be playable (I will change this soon).
 - The armor Trims may have to be taken out of the ingredients list.
 - I lack the creativity to make a good pack.png haha.
