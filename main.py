@@ -117,8 +117,7 @@ def add_datapack_stuff(seed, tmp_dir, script_dir, original_list, new_list):
             ing_string = new_list[ing][1] + " is used for " + original_list[ing][1] + "\n"
             cheatsheet.write(ing_string)
 
-    # todo: make pack.png (in files folder)
-    # shutil.copyfile(os.path.join(script_dir, "files/pack.png"), os.path.join(tmp_dir, "pack.png"))
+    shutil.copyfile(os.path.join(script_dir, "files/pack.png"), os.path.join(tmp_dir, "pack.png"))
 
 
 def make_zip(seed, tmp_dir):
@@ -146,7 +145,7 @@ def all_random_shuffle(x, seed):
         x[i], x[j] = x[j], x[i]
 
 
-def shuffle_ingredients(ingredients_list, seed=False, all_random=True):
+def shuffle_ingredients(ingredients_list, seed=False, all_random=False):
     if not seed:
         seed = random.randint(-2**63, 2**63-1)
 
