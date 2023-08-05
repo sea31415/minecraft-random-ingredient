@@ -31,6 +31,9 @@ cobblestone is used for diamond
 
 So for example:
 ```
+python main.py
+```
+```
 python main.py auto_seed false
 ```
 ```
