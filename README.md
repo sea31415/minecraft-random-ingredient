@@ -43,6 +43,7 @@ python main.py 57483902 yes
 ### Other info:
 - I will eventually make a "beginners tips" info file for this. If you've played randomized loot drops, or better yet randomized crafting, (or watched other people play them a lot) you wont need these.
 - From tests it seems that on average, one of the ingredients gets mapped to itself, i have half-implemented an "all-random-shuffle" which is supposed to get around this, but I think it doesn't work properly so i need to do more tests. (If you know python, feel free to play around with it)
+- Newest comment: I'm losing faith in the possibility of an easy one of these...
 
 ### Current Problems (should still be playable with these existing):
 - Because of how the recipe book works/seems to work, it unlocks more crafting recipes than I'd want. For example, holding a log is supposed to unlock only my new randomized recipes that use logs, but it also unlocks all the vanilla recipes that normally use logs which now of course dont use logs.
