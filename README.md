@@ -53,3 +53,6 @@ python main.py 57483902 yes
 - Some recipes do not have the "show_notification" set to true, which might be necessary for it to be playable (I will change this soon).
 - The armor Trims may have to be taken out of the ingredients list.
 - I lack the creativity to make a good pack.png haha.
+
+![pack.png](https://github.com/sea31415/minecraft-random-ingredient/assets/140927963/cfd74a82-8b4d-4c4d-9438-0d7f8b9ecc23)
+
